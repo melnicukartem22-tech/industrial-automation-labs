@@ -1,0 +1,76 @@
+[
+    {
+        "id": "16f3157f6fbdf548",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6d01e8557be63c4b",
+        "type": "NetworkIntf",
+        "z": "16f3157f6fbdf548",
+        "name": "",
+        "x": 470,
+        "y": 280,
+        "wires": [
+            [
+                "832bf31e1a40b07e"
+            ]
+        ]
+    },
+    {
+        "id": "b1f5a3d2e361c772",
+        "type": "inject",
+        "z": "16f3157f6fbdf548",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 280,
+        "wires": [
+            [
+                "6d01e8557be63c4b"
+            ]
+        ]
+    },
+    {
+        "id": "832bf31e1a40b07e",
+        "type": "debug",
+        "z": "16f3157f6fbdf548",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "6be31ffc32a7c23a",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-os": "0.2.1"
+        }
+    }
+]
